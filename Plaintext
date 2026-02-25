@@ -1,0 +1,10 @@
+hotdeal_bot/
+├── main.py              # 전체 스케줄러(5분 주기) 및 시스템 진입점
+├── bot.py               # 텔레그램 API 통신 및 명령어/콜백 핸들러
+├── scraper.py           # 대상 웹사이트 HTML 파싱 및 URL 수집 로직
+├── scorer.py            # LLM API 연동 및 하이브리드 점수 산출 로직
+├── database.py          # SQLite 연결 및 CRUD 클래스
+├── config.py            # 환경 변수(API 키, 설정값) 관리
+├── requirements.txt     # 의존성 패키지 목록
+└── data/                # SQLite DB 파일 저장소 (자동 생성됨)
+    └── hotdeals.db
